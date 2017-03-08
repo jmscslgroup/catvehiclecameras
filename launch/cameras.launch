@@ -1,0 +1,9 @@
+<!-- launch file to launch both cameras at once -->
+
+
+<launch>
+<group ns="catvehicle">
+	<include file="$(find catvehiclecameras)/launch/camera_left.launch"/>
+	<include file="$(find catvehiclecameras)/launch/camera_right.launch"/>
+</group>
+</launch>
