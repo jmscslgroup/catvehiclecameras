@@ -3,6 +3,10 @@
 
 <launch>
 <group ns="catvehicle">
+	<!-- NOTE: probably concurrent w/ triclops eventually. However -->
+	<!-- will not work until we get the -->
+	<!-- new cable card installed and don't need daisy-chain -->
+	<!--<include file="$(find catvehiclecameras)/launch/triclops.launch"/>-->
 	<include file="$(find catvehiclecameras)/launch/camera_left.launch"/>
 	<include file="$(find catvehiclecameras)/launch/camera_right.launch"/>
 </group>
